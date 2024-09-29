@@ -1,5 +1,4 @@
-
-.explorer-button{
+.explorer-button {
     background-color: #eaee05d0; /* Cor de fundo do botão */
     color: white; /* Cor do texto */
     padding: 10px 20px; /* Espaçamento interno */
@@ -10,7 +9,9 @@
     text-transform: uppercase; /* Deixar o texto todo em maiúsculas */
     text-align: center; /* Centralizar o texto */
     text-decoration: none; /* Remover sublinhado */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza as transições */
 }
+
 .explorer-button:hover {
     background-color: #fbff08dc; /* Muda a cor de fundo ao passar o mouse */
     color: #ffffff; /* Muda a cor do texto ao passar o mouse */
@@ -18,52 +19,52 @@
     cursor: pointer; /* Mudar o cursor para "pointer" */
     box-shadow: 4px 0px 15px 5px rgba(255, 254, 254, 0.2); /* Sombra ao passar o mouse */
     text-decoration: none; /* Remover sublinhado */
-
 }
 
-h1{
-    width: 250px;
+h1 {
+    width: 100%; /* Largura total para responsividade */
     height: auto;
 }
-h2{
-    text-align: right;
-    
+
+h2 {
+    text-align: left; /* Alinhamento à esquerda para consistência */
 }
 
-img{
-    width: 250px;
-    height: auto;
+img {
+    max-width: 100%; /* Permite que a imagem seja responsiva */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 header {
     margin-bottom: 20px;
+    display: flex; /* Utiliza flexbox para alinhamento */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Centraliza verticalmente */
 }
 
 .carousel-item img {
-    width: 100%;  /* Faz com que as imagens ocupem 100% da largura do carrossel */
-    height: 400px;  /* Ajusta a altura das imagens */
-    object-fit: cover;  /* As imagens vão se ajustar, cobrindo o carrossel sem distorção */
+    width: 100%; /* Faz com que as imagens ocupem 100% da largura do carrossel */
+    height: 400px; /* Ajusta a altura das imagens */
+    object-fit: cover; /* As imagens vão se ajustar, cobrindo o carrossel sem distorção */
 }
 
 .carousel-item {
     background-color: #351242; /* Cor de fundo do slide */
-    height: auto;
-    width: auto;
-    
+    height: auto; /* Altura automática */
 }
 
 .carousel-control-prev,
 .carousel-control-next {
     padding: 20px;
-    background-color: rgba(236, 236, 199, 0);
-    
+    background-color: rgba(236, 236, 199, 0); /* Fundo transparente */
 }
 
-
 .carousel {
-    width: 60%;  /* Altera a largura do carrossel, por exemplo, 100% do contêiner */
-    height: 400px;  /* Define a altura desejada para o carrossel */
-    margin: 0 auto;  /* Centraliza o carrossel horizontalmente */
+    width: 100%; /* 100% de largura para ocupação total */
+    max-width: 800px; /* Largura máxima para o carrossel */
+    height: 400px; /* Altura desejada para o carrossel */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+    display: block; /* Garante que o carrossel seja tratado como um bloco */
 }
 
 .carousel-slide {
@@ -72,19 +73,18 @@ header {
 }
 
 .description {
-    background-color: rgba(0, 0, 0, 0.7);  /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
     color: rgb(255, 255, 255);
     padding: 10px;
     font-size: 16px;
     margin-top: 10px;
 }
 
-
 hr {
-    border: none;          /* Remove a borda padrão */
-    height: 2px;          /* Define a altura da linha */
+    border: none; /* Remove a borda padrão */
+    height: 2px; /* Define a altura da linha */
     background-color: #000; /* Cor da linha */
-    margin: 20px 0;       /* Espaço acima e abaixo da linha */
+    margin: 20px 0; /* Espaço acima e abaixo da linha */
 }
 
 .carousel-indicators button {
@@ -94,4 +94,37 @@ hr {
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente para o texto */
     padding: 15px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .explorer-button {
+        width: 100%; /* Botão ocupa a largura total em telas menores */
+        padding: 15px; /* Aumenta o padding para facilitar o toque em telas pequenas */
+    }
+    
+    h2 {
+        text-align: left; /* Alinhamento à esquerda para telas menores */
+    }
+    
+    .carousel {
+        margin: 0 10px; /* Menos margem em telas pequenas */
+        height: 250px; /* Altura reduzida para o carrossel em telas pequenas */
+    }
+    
+    .carousel-item img {
+        height: 250px; /* Altura reduzida para as imagens do carrossel */
+    }
+
+    .description {
+        font-size: 14px; /* Tamanho de fonte reduzido */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Tamanho da fonte reduzido em telas pequenas */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Espaçamento adicional entre os cards */
+    }
 }

@@ -29,8 +29,6 @@ h1, h2, h3 {
     cursor: pointer; /* Mudar o cursor para "pointer" */
     box-shadow: 4px 0px 15px 5px rgba(255, 254, 254, 0.2); /* Sombra ao passar o mouse */
     text-decoration: none; /* Remover sublinhado */
-
-
 }
 
 .container {

@@ -29,6 +29,7 @@ form button {
     margin-bottom: 20px;
 }
 
+/* Estilo da seção de filtros */
 .filtro-secao {
     background-color: #c5c90979;
     padding: 20px;
@@ -53,4 +54,39 @@ h2 {
 
 .btn-primary:hover {
     background-color: #4141ff;
+}
+
+/* Consultas de mídia para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Muda a direção do cabeçalho para coluna em telas pequenas */
+        align-items: flex-start; /* Alinha os itens ao início */
+    }
+
+    header img {
+        width: 150px; /* Reduz a largura da imagem do cabeçalho em telas menores */
+    }
+
+    form input[type="text"] {
+        width: 100%; /* O campo de texto ocupa toda a largura */
+        margin-bottom: 10px; /* Espaço abaixo do campo de texto */
+    }
+
+    form button {
+        width: 100%; /* O botão ocupa toda a largura */
+    }
+
+    .card {
+        flex: 1 1 100%; /* Faz com que os cards ocupem toda a largura em telas pequenas */
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px; /* Reduz o padding do cabeçalho em telas muito pequenas */
+    }
+
+    header img {
+        width: 120px; /* Reduz ainda mais a largura da imagem do cabeçalho em telas muito pequenas */
+    }
 }
