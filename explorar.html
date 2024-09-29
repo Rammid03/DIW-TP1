@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Séries</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/explorar.css">
+</head>
+
+<!-- Cabeçalho -->
+<body>
+    <header class="bg-dark">
+        <a href="principal.html">
+            <img src="assets/image/logotipo2.png" alt="Logo Do Site">
+        </a>
+        <form method="GET" action="explorar.html" class="form-inline">
+            <input style="width: 300px;" type="text" name="search" class="form-control mr-2" placeholder="Pesquisar séries...">
+            <button type="submit" class="pesquisar-button">Pesquisar</button>
+        </form>
+    </header>
+
+    <!-- Filtro -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 filtro-secao">
+                <h2>Filtros</h2>
+                <form method="GET" action="explorar.html">
+                    <div class="form-group">
+                        <select name="genre" class="form-control">
+                            <option value="">Selecionar Gênero</option>
+                            <option value="28">Ação</option>
+                            <option value="35">Comédia</option>
+                            <option value="18">Drama</option>
+                            <option value="27">Terror</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="rating" class="form-control">
+                            <option value="">Selecionar Avaliação</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="status" class="form-control">
+                            <option value="">Selecionar Status</option>
+                            <option value="Currently Airing">Em Exibição</option>
+                            <option value="Ended">Encerrada</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
+                </form>
+            </div>
+
+            <!-- Séries Encontradas -->
+            <div class="col-md-9">
+                <h2>Séries Encontradas</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/image/arcane.jpg" class="card-img-top" alt="Série 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Arcane</h5>
+                                <p style="font-size: small;" class="card-text">Em meio à tensão entre duas cidades irmãs, duas jovens lutam em lados opostos de uma guerra que tem consequências globais e pessoais.</p>
+                                <a href="detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/assets/image/strangerthings.jpg" class="card-img-top" alt="Série 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Stranger Things</h5>
+                                <p style="font-size: small;" class="card-text">Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.</p>
+                                <a href="detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/image/breaking_bad.jpg" class="card-img-top" alt="Série 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Breaking Bad</h5>
+                                <p style="font-size: small;" class="card-text">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.</p>
+                                <a href="detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/image/wistoria.jpeg" class="card-img-top" alt="Série 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Wistoria: Wand and Sword</h5>
+                                <p style="font-size: small;" class="card-text">Um garoto esforçado chamado Will entra em uma academia de magia na esperança de se tornar um grande feiticeiro. Infelizmente, há uma falha fatal em seu plano: ele não tem a habilidade de usar magia.</p>
+                                <a href="detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/image/oceanxplorers.webp" class="card-img-top" alt="Série 3">
+                            <div class="card-body">
+                                <h5 class="card-title">OceanXplorers</h5>
+                                <p style="font-size: small;" class="card-text">Acompanha as missões do OceanXplorer, o navio de pesquisa científica e exploração de última geração da OceanX.</p>
+                                <a href="detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/image/agathadesdesempre.png" class="card-img-top" alt="Série 3">
+                            <div class="card-body">
+                                <h5 class="card-title">OceanXplorers</h5>
+                                <p style="font-size: small;" class="card-text">A infame Agatha Harkness encontra-se sem poderes depois de um jovem gótico suspeito ajudá-la a se libertar de um feitiço distorcido.</p>
+                                <a href="detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -9,28 +9,6 @@ h1, h2, h3 {
     text-align: center;
 }
 
-
-.explorer-button{
-    background-color: #eaee05d0; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: 2px solid #eaee0593; /* Borda da mesma cor que o fundo */
-    border-radius: 30px; /* Bordas arredondadas */
-    font-size: 18px; /* Tamanho do texto */
-    font-weight: bold; /* Deixar o texto em negrito */
-    text-transform: uppercase; /* Deixar o texto todo em maiúsculas */
-    text-align: center; /* Centralizar o texto */
-    text-decoration: none; /* Remover sublinhado */
-}
-.explorer-button:hover {
-    background-color: #fbff08dc; /* Muda a cor de fundo ao passar o mouse */
-    color: #ffffff; /* Muda a cor do texto ao passar o mouse */
-    border: 2px solid #eaee05d0; /* Manter a borda ao passar o mouse */
-    cursor: pointer; /* Mudar o cursor para "pointer" */
-    box-shadow: 4px 0px 15px 5px rgba(255, 254, 254, 0.2); /* Sombra ao passar o mouse */
-    text-decoration: none; /* Remover sublinhado */
-}
-
 .container {
     width: 90%;
     margin: 0 auto;
@@ -45,7 +23,33 @@ h1, h2, h3 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Seção 1: Informações Gerais */
+
+/* Botão Explorar */
+.explorer-button{
+    background-color: #eaee05d0; 
+    color: white; 
+    padding: 10px 20px; 
+    border: 2px solid #eaee0593;
+    border-radius: 30px; 
+    font-size: 18px;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    text-align: center; 
+    text-decoration: none; 
+}
+
+.explorer-button:hover {
+    background-color: #fbff08dc; 
+    color: #ffffff; 
+    border: 2px solid #eaee05d0; 
+    cursor: pointer; 
+    box-shadow: 4px 0px 15px 5px rgba(255, 254, 254, 0.2); 
+    text-decoration: none; 
+}
+
+
+
+/* Informações Gerais */
 .info-geral {
     display: flex;
     flex-direction: column;
@@ -79,26 +83,7 @@ h1, h2, h3 {
 }
 
 
-/* .back-button {
-    display: inline-block;
-    margin: 20px 100px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.back-button:hover {
-    background-color: #0056b3;
-} */
-
-
-/* Seção 2: Elenco */
+/* Elenco */
 .elenco {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -120,7 +105,7 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-/* Seção 3: Temporadas e Episódios */
+/* Temporadas e Episódios */
 .temporadas {
     display: flex;
     flex-direction: column;

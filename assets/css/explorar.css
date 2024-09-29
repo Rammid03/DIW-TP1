@@ -27,7 +27,9 @@ form button {
 
 .card {
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
 
 /* Estilo da seção de filtros */
 .filtro-secao {
@@ -47,46 +49,47 @@ h2 {
     color: #333;
 }
 
-.btn-primary {
+.pesquisar-button {
     background-color: #5a5aff;
     border: none;
 }
 
-.btn-primary:hover {
+.pesquisar-button:hover {
     background-color: #4141ff;
 }
 
-/* Consultas de mídia para responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Muda a direção do cabeçalho para coluna em telas pequenas */
-        align-items: flex-start; /* Alinha os itens ao início */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     header img {
-        width: 150px; /* Reduz a largura da imagem do cabeçalho em telas menores */
+        width: 150px; 
     }
 
     form input[type="text"] {
-        width: 100%; /* O campo de texto ocupa toda a largura */
-        margin-bottom: 10px; /* Espaço abaixo do campo de texto */
+        width: 100%; 
+        margin-bottom: 10px; 
     }
 
     form button {
-        width: 100%; /* O botão ocupa toda a largura */
+        width: 100%; 
     }
 
     .card {
-        flex: 1 1 100%; /* Faz com que os cards ocupem toda a largura em telas pequenas */
+        flex: 1 1 100%; 
     }
 }
 
+/* Responsividade */
 @media (max-width: 576px) {
     header {
-        padding: 10px; /* Reduz o padding do cabeçalho em telas muito pequenas */
+        padding: 10px; 
     }
 
     header img {
-        width: 120px; /* Reduz ainda mais a largura da imagem do cabeçalho em telas muito pequenas */
+        width: 120px; 
     }
 }
